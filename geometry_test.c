@@ -180,11 +180,15 @@ Suite* coord_2d_suite(void)
 
     TCase* tc_2d_midpoint = tcase_create("coord_2d_midpoint");
     tcase_add_test(tc_2d_midpoint, test_2d_midpoint);
+    
+    TCase* tc_2d_area_triangle = tcase_create("coord_2d_area_triagnle");
+    tcase_add_test(tc_2d_area_triangle,tc_2d_area_triangle,tc_2d_area_triangle);
 
     /* Add Cases to Suite */
     suite_add_tcase(s, tc_2d_eq);
     suite_add_tcase(s, tc_2d_dist);
     suite_add_tcase(s, tc_2d_midpoint);
+    suite_add_tcase(s, tc_2d_area_triangle);
 
     /* Return Suite */
     return s;
