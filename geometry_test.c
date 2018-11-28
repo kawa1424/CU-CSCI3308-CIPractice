@@ -162,6 +162,7 @@ START_TEST(test_2d_triarea)
     
     ck_assert(coord_2d_area_triangle(&a, &b, &c));
 }
+END_TEST
 
 /* coord_2d Test Suite */
 Suite* coord_2d_suite(void)
